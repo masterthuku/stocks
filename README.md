@@ -1,5 +1,9 @@
 # Stocks App
 
+[![Next.js](https://img.shields.io/badge/Next.js-13+-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 A modern **Next.js + TypeScript** web application for tracking and analyzing stocks.
 
 ---
@@ -36,22 +40,22 @@ A modern **Next.js + TypeScript** web application for tracking and analyzing sto
 
 ## ⚙️ Getting Started
 
-1. **Clone the repository**
+1. **Clone the repository**  
     git clone https://github.com/masterthuku/stocks.git  
     cd stocks
 
-2. **Install dependencies**
+2. **Install dependencies**  
     npm install  
     # or  
     yarn install
 
-3. **Run the development server**
+3. **Run the development server**  
     npm run dev  
     # or  
     yarn dev  
     Open http://localhost:3000 in your browser.
 
-4. **Build for production**
+4. **Build for production**  
     npm run build  
     npm start
 
