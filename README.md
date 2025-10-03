@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stocks App
 
-## Getting Started
+A modern **Next.js + TypeScript** web application for tracking and analyzing stocks.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
+- 📊 View real-time and historical stock prices
+- 🔍 Search and filter for specific stocks
+- 📈 Interactive charts and visualizations
+- 💾 Database-ready structure for saving data and user preferences
+- ⚡ Built with performance and scalability in mind using Next.js App Router
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
+- **Framework**: [Next.js 13+](https://nextjs.org/) (App Router)
+- **Language**: TypeScript
+- **Styling**: CSS / Tailwind (if configured)
+- **Database**: (Planned, placeholder in `database/` directory)
+- **Linting**: ESLint
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Project Structure
+    ├── app/             # Next.js App Router pages
+    ├── components/      # Reusable UI components
+    ├── database/        # Database config and models (WIP)
+    ├── hooks/           # Custom React hooks
+    ├── lib/             # Utility functions and helpers
+    ├── public/          # Static assets
+    ├── types/           # TypeScript type definitions
+    └── README.md        # Project documentation
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository**
+    git clone https://github.com/masterthuku/stocks.git  
+    cd stocks
 
-## Deploy on Vercel
+2. **Install dependencies**
+    npm install  
+    # or  
+    yarn install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Run the development server**
+    npm run dev  
+    # or  
+    yarn dev  
+    Open http://localhost:3000 in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Build for production**
+    npm run build  
+    npm start
+
+---
+
+## 🔑 Environment Variables
+Create a `.env.local` file in the root directory and add required API keys or configuration values:
+
+    NEXT_PUBLIC_API_KEY=your_stock_api_key_here
+
+(Refer to the stock data provider documentation for how to obtain API keys.)
+
+---
+
+## 🧪 Testing (Planned)
+Testing support with **Jest** and **React Testing Library** will be added.
+
+---
+
+## 📌 Roadmap
+- [ ] Connect to a real stock API (e.g., Alpha Vantage, Yahoo Finance, IEX)
+- [ ] Add interactive charts and visualizations
+- [ ] Implement portfolio tracking
+- [ ] Add authentication and user accounts
+- [ ] Improve UI/UX with responsive design
+- [ ] Deploy to Vercel with CI/CD pipeline
+
+---
+
+## 🤝 Contributing
+Contributions are welcome! To contribute:
+1. Fork the repo
+2. Create a feature branch (`git checkout -b feature-name`)
+3. Commit changes (`git commit -m "Add new feature"`)
+4. Push to branch (`git push origin feature-name`)
+5. Open a Pull Request
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License** – feel free to use, modify, and distribute.
+
+---
+
+## 👨‍💻 Author
+Developed by **[masterthuku](https://github.com/masterthuku)**
