@@ -5,15 +5,19 @@ import FooterLink from "@/components/forms/FooterLink";
 import InpuField from "@/components/forms/InpuField";
 import SelectField from "@/components/forms/SelectField";
 import { Button } from "@/components/ui/button";
+import { signUpWithEmail } from "@/lib/actions/auth.actions";
 import {
   INVESTMENT_GOALS,
   PREFERRED_INDUSTRIES,
   RISK_TOLERANCE_OPTIONS,
 } from "@/lib/constants";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 
 const SignUp = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -33,9 +37,17 @@ const SignUp = () => {
   });
   const onSubmit = async (data: SignUpFormData) => {
     try {
-      console.log(data);
+      const result = await signUpWithEmail(data);
+      if (result.success) router.push("/");
+      toast.success(result.message);
     } catch (error) {
       console.log(error);
+      toast.error("Sign Up failed. Please try again.", {
+        description:
+          error instanceof Error
+            ? error.message
+            : "Failed to create an account",
+      });
     }
   };
   return (
@@ -121,7 +133,11 @@ const SignUp = () => {
             ? "Creating Account...."
             : "Start your investment journey"}
         </Button>
-        <FooterLink text="Already have an account?" linkText="Sign In" href="/sign-in" />
+        <FooterLink
+          text="Already have an account?"
+          linkText="Sign In"
+          href="/sign-in"
+        />
       </form>
     </>
   );
