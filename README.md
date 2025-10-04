@@ -102,7 +102,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/signalist_stock-tracker-app.git
+git clone https://github.com/masterthuku/stocks.git
 cd signalist_stock-tracker-app
 ```
 
