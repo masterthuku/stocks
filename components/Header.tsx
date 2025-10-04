@@ -18,7 +18,6 @@ const Header = async ({ user }: { user: User }) => {
                 <nav className="hidden sm:block">
                     <NavItems initialStocks={initialStocks} />
                 </nav>
-
                 <UserDropdown user={user} initialStocks={initialStocks} />
             </div>
         </header>
